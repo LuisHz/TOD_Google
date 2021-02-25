@@ -1,0 +1,47 @@
+body {
+    margin: 0px;
+    color: rgba(0,0,0,0.87);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;    
+    align-items: center;
+    
+}
+
+ul li{
+    margin: 5px;
+}
+
+.icon-nav {
+    width: 24px;
+    height: auto;
+}
+
+.icon-search {
+    width: 24px;
+    height: auto;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+
