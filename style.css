@@ -7,6 +7,11 @@ body {
     height: 100%;
 }
 
+button, 
+input {
+    box-sizing: border-box;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -61,6 +66,44 @@ main {
     
 }
 
+.input-box {
+    min-width: 35vmax;
+    padding: 12px;
+    text-indent: 30px;
+    font-size: 17px;
+    border-radius: 20px;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.icon-search {
+    position: absolute;
+    margin-top: 11px;
+    transform: scale(0.70);
+    opacity: 0.8;
+    margin-left: 10px;
+    text-indent: 50px;
+}
+
+
+.search-buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.search-msg {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.languages-msg {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
 
 .icon-nav {
     width: 24px;
@@ -82,13 +125,17 @@ footer {
 
 footer hr {
     color: rgba(0,0,0,.15);
+    margin: 0;
 }
 
 
 .country-cont {
-    padding: 0px 10px;
-    margin: 20px;
+    padding: 0px 15px;
+    margin: 0px 15px;
+    font-size: 15px;
 }
+
+
 
 .footer-links {
     display: flex;
