@@ -81,6 +81,7 @@ main {
     font-size: 17px;
     border-radius: 20px;
     border-width: 1px;
+    border-color: rgba(0,0,0,.12);
     border-style: solid;
 }
 
