@@ -54,6 +54,7 @@ header nav ul li button {
 header nav ul li button:hover {
     cursor: pointer;
     /*#1a73e8*/
+    background-color: #237ef5; 
 }
 
 main {
@@ -62,12 +63,19 @@ main {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 92.5vh;
+    height: 85.8vh;
     
+}
+.search-input {
+    margin-bottom: 30px;
+}
+
+.logo-cont {
+    margin-bottom: 20px;
 }
 
 .input-box {
-    min-width: 35vmax;
+    width: 600px;
     padding: 12px;
     text-indent: 30px;
     font-size: 17px;
@@ -76,25 +84,65 @@ main {
     border-style: solid;
 }
 
+.input-box:focus {
+    outline: none;
+}
+
 .icon-search {
     position: absolute;
     margin-top: 11px;
     transform: scale(0.70);
     opacity: 0.8;
     margin-left: 10px;
-    text-indent: 50px;
 }
 
+.x-icon {
+    position: absolute;
+    width: 24px;
+    height: auto;
+    margin-top: 11px;
+    margin-left: -50px;
+    opacity: 0.5;
+    display: none;
+}
+
+.x-icon:hover {
+    cursor: pointer;
+}
 
 .search-buttons {
     display: flex;
-    flex-direction: row;
+    flex-direction: row;  
+    justify-content: space-between;
+    
+}
+
+.google-search,
+.lucky-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    margin: 0px 10px;
+    border-radius: 5px;
+}
+
+.google-search p,
+.lucky-search p {
+    padding: 0px;
+    margin: 0px;
+}
+
+.google-search:hover,
+.lucky-search:hover {
+    box-shadow: 0px 0px 0.5px #000;
+    text-decoration: none;
 }
 
 .search-msg {
     display: flex;
     flex-direction: row;
-    
+    margin-top: 13px;
 }
 
 .languages-msg {
@@ -104,10 +152,23 @@ main {
     
 }
 
+.language {
+    margin: 0px 5px;
+}
 
 .icon-nav {
     width: 24px;
     height: auto;
+    
+}
+
+.cont-icon-nav {
+    padding: 10px;
+}
+
+.cont-icon-nav:hover {
+    background-color: rgba(0,0,0,.07);
+    border-radius: 50%;
 }
 
 .icon-search {
@@ -163,10 +224,22 @@ footer hr {
     .footer-links {
         justify-content: space-evenly;
     }
+
+
 }
 
 @media(max-width: 544.5px){
     .nav-footer-cont {
         justify-content: center;
+    }
+
+    .input-box {
+        width: 90vw;
+    }
+}
+
+@media(max-width: 800px){
+    .input-box {
+        width: 90vw;
     }
 }
